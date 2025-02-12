@@ -1,0 +1,66 @@
+## Pasos para crear un entorno virtual e instalar dependencias
+
+1. **Crea el directorio del proyecto (si aún no existe):**
+
+   ```bash
+   mkdir mi_proyecto
+   cd mi_proyecto
+Crea el entorno virtual (usando venv - recomendado):
+
+Bash
+
+python3 -m venv mi_entorno
+Activa el entorno virtual:
+
+En Windows:
+
+Bash
+
+mi_entorno\Scripts\activate
+En macOS/Linux:
+
+Bash
+
+source mi_entorno/bin/activate
+Instala las dependencias (desde requirements.txt - recomendado):
+
+Si tienes un archivo requirements.txt (lista de dependencias):
+
+Bash
+
+pip install -r requirements.txt
+Si no tienes un archivo requirements.txt y necesitas instalar dependencias individuales:
+
+Bash
+
+pip install Flask requests numpy  # Reemplaza con las dependencias de tu proyecto
+Crea el archivo requirements.txt (opcional - para futuras referencias):
+
+Si deseas guardar la lista de dependencias para futuras instalaciones:
+Bash
+
+pip freeze > requirements.txt
+Ejemplo completo (para un proyecto con Flask, requests y numpy):
+Crea el directorio del proyecto:
+
+Bash
+
+mkdir mi_proyecto
+cd mi_proyecto
+Crea y activa el entorno virtual:
+
+Bash
+
+python3 -m venv mi_entorno
+source mi_entorno/bin/activate  # macOS/Linux
+mi_entorno\Scripts\activate      # Windows
+Instala las dependencias:
+
+Bash
+
+pip install Flask requests numpy
+Crea el archivo requirements.txt:
+
+Bash
+
+pip freeze > requirements.txt
